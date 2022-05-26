@@ -9,7 +9,16 @@ This is the official repository for my Interpreter project.
 
 ## Introduction to Ocaml ##
 
-It's a pretty simple but fun game and I was initially just interested in how to create an algorithm that would be hard to beat. So, I coded it and even added a user interface!
+Ocaml is a pretty unique programming language with the following features:
+* Garbage Collection for automatic memory management.
+* First-class functions (a function that is treated like a variable).
+* Static type-checking. Variables are checked during compile-time.
+* Parametric polymorphism. Enables construction of abstractions that work across data types.
+* Immutable programming.
+* Type inference. Variable types don't need to be declared, but have to remain the same. 
+* Pattern matching. 
+
+Ocaml used to be commonly used for parsers, compilers, and interpreters but now, along with wide support for the language, it is used for more things too. 
 
 ## Brief description of program ##
 
