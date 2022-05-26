@@ -8,7 +8,7 @@ This is the official repository for my Interpreter project.
 
 ## Introduction to Ocaml ##
 
-Ocaml is a pretty unique programming language with the following features:
+[Ocaml](https://ocaml.org/docs) is a pretty unique programming language with the following features:
 * Garbage Collection for automatic memory management.
 * First-class functions (a function that is treated like a variable).
 * Static type-checking. Variables are checked during compile-time.
