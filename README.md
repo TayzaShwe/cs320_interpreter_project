@@ -24,7 +24,7 @@ Ocaml used to be commonly used for parsers, compilers, and interpreters but now,
 The order in which the interpreter operates is as follows:
 1) Accepts a string of commands (eg. "Push 1 Push 2 Add 2")
 2) The string of commands is then broken up into an array of commands. Each element of type command. 
-3) The array is passed into a evaluator function that performs the commands on a stack. 
+3) The array is passed into a evaluator function that performs the commands on a stack. If the comand's [syntax](https://github.com/TayzaShwe/cs320_interpreter_project/blob/main/stack_language_syntax.txt) or usage is wrong, "error" is added.
 4) An array of results is returned from the evaluator function.
 
 [Demonstration video.](https://youtu.be/EiNxiaXhf8w)
