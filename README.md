@@ -22,10 +22,9 @@ Ocaml used to be commonly used for parsers, compilers, and interpreters but now,
 
 ## Brief description of program ##
 
-You can play against three kinds of opponents:
-* Player 2. Just takes in another input from user.
-* Easy Bot. Randomizes the next move.
-* Hard Bot. Uses the minimax algorithm to find optimal move.
+The order in which the interpreter operates is as follows:
+1) Accepts a string of commands (eg. "Push 1 Push 2 Add 2")
+2) The string of commands is then broken up into an 
 
 [Demonstration video.](https://youtu.be/EiNxiaXhf8w)
 
