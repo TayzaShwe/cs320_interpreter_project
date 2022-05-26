@@ -5,7 +5,6 @@ This is the official repository for my Interpreter project.
 1) Introduction to Ocaml
 2) Brief description of program
 3) Commands
-4) How the program was built
 
 ## Introduction to Ocaml ##
 
@@ -34,35 +33,4 @@ The order in which the interpreter operates is as follows:
 
 Refer to [project_instructions](https://github.com/TayzaShwe/cs320_interpreter_project/blob/main/project_instructions.pdf).
 
-
-## How the program was built ##
-
-The first version I created used the terminal for user interface. I then switched to PyQt5. 
-1) Download PyQt5
-```
-pip install pyqt5
-pip install pyqt5-tools
-```
-2) Design the windows in designer. The app can be found inside the site-packages folder inside your python folder. This is PyQt5's drag-and-drop style application that allows you to build the interface. 
-3) Save the design as a .ui file.
-4) Convert the .ui file into a python file with the following command:
-```
-pyuic5 -x filename.ui -o filename.py
-```
-5) Edit the python file to add functionality. 
-6) Download PyInstaller
-```
-pip install pyinstaller
-```
-7) Convert the python file into an executable file. Not that this converts to an executable file only compatible with your operating system. I used linux, so the executable file in this repository is only compatible with linux. Also note that the file size may be large since it adds all of PyQt5 into the executable file. There is no way around this issue at the moment.
-```
-pyinstaller --onefile filename.py
-```
-Now will you have the executable file! 
-
-## TECHNOLOGIES INVOLVED ##
-
-* Python 
-* [PyQt5](https://pypi.org/project/PyQt5/)
-* [PyInstaller](https://pyinstaller.org/en/stable/) 
 
