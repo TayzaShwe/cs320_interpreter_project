@@ -1,0 +1,52 @@
+Push 20
+Push x
+Local
+Push 30
+Push x
+Global
+Push x
+Lookup
+Push 8
+Push 9
+Sub 3
+Begin
+    Push x
+    Lookup
+    Push 7
+    Add 2
+    Push y
+    Global
+    Push y
+    Lookup
+    Begin
+        Push y
+        Lookup
+        Push 8
+        Sub 2
+        Push y
+        Local
+        Push y
+        Lookup
+        Begin 
+            Push y
+            Lookup
+            Push 90
+            Add 2
+            Push z
+            Global
+        End
+    End
+    Push y
+    Lookup
+    Push x
+    Global
+    Push x
+    Lookup
+End
+Push x
+Lookup
+Push y
+Lookup
+Push z
+Lookup
+Trace 7

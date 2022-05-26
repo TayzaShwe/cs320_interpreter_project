@@ -1,0 +1,73 @@
+Push False
+Push x1
+Global
+Push x1
+Lookup
+If
+    Push True
+    Push x2
+    Global
+    Push x2
+    Lookup
+    If
+        Push x2
+        Lookup
+        Push x1
+        Lookup
+        And
+        Push x3
+        Global
+    Else
+        Push x2
+        Lookup
+        Not
+        Push x1
+        Lookup
+        And
+        Push x3
+        Global
+    End
+Else
+    Push False
+    Push x2
+    Global
+    Push x2
+    Lookup
+    If
+        Push x2
+        Lookup
+        Push x1
+        Lookup
+        And
+        Push x3
+        Local
+        Push x3
+        Lookup
+        Push x1
+        Local
+    Else
+        Push True
+        Push x2
+        Local
+        Push x2
+        Lookup
+        Push x3
+        Local
+        Push x3
+        Lookup
+        Not
+        Push x2
+        Global
+        Push x3
+        Lookup
+        Push x1
+        Local
+    End
+End
+Push x1
+Lookup
+Push x2
+Lookup
+Push x3
+Lookup
+Trace 8

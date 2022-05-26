@@ -1,0 +1,32 @@
+Push 10
+Push z
+Local
+Push 8
+Push x
+Local
+Push x
+Lookup
+Push 9
+Lte
+If
+    Begin
+        Push x
+        Push y
+        Global
+    End
+Else
+    Begin
+        Push z
+        Push y
+        Global
+    End
+End
+Push x
+Lookup
+Push y
+Lookup
+Lookup
+Push z
+Lookup
+Trace 3
+

@@ -1,0 +1,48 @@
+Begin
+  Push 4
+  Push vx
+  Local
+  Pop 1
+  Push vx
+  Lookup
+  Switch
+    Case 1
+      Begin
+        Push 1
+        Trace 1
+        Push ()
+      End
+    Case 2
+      Begin
+        Push 2
+        Trace 1
+        Push ()
+      End
+    Case 3
+      Begin
+        Push 3
+        Trace 1
+        Push ()
+      End
+    Case 4
+      Begin
+        Push 4
+        Trace 1
+        Push ()
+      End
+    Case 5
+      Begin
+        Push 5
+        Trace 1
+        Push ()
+      End
+    Case 6
+      Begin
+        Push 6
+        Trace 1
+        Push ()
+      End
+  End
+End
+----------------interp result----------------
+["4"]

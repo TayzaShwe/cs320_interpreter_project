@@ -1,0 +1,23 @@
+Push 8
+Push 9
+Lte
+Push 9
+Push 8
+Lte
+Or
+Not
+Not
+Push 20
+Push 16
+Equal
+Push 20
+Push 20
+Equal
+Push True
+Push False
+Or
+Not
+And
+Or
+And
+Trace 1

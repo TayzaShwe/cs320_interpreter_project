@@ -1,0 +1,134 @@
+Begin
+  Push 1
+  Push vx
+  Local
+  Pop 1
+  Begin
+    Push 2
+    Push vy
+    Local
+    Pop 1
+    Begin
+      Push 3
+      Push vz
+      Local
+      Pop 1
+      Begin
+        Push False
+        Push exn
+        Global
+        Pop 1
+        Try
+          Push False
+          Push exn
+          Global
+          Pop 1
+          Try
+            Push 2
+            Push vy
+            Lookup
+            Div 2
+            Push True
+            Push exn
+            Global
+            Pop 1
+          End
+          Push exn
+          Lookup
+          If
+            Pop 0
+          Else
+            Begin
+              Push 8
+              Push True
+              Push exn
+              Global
+              Pop 1
+            End
+          End
+          Push False
+          Push exn
+          Global
+          Pop 1
+          Try
+            Push 0
+            Push vz
+            Lookup
+            Div 2
+            Push True
+            Push exn
+            Global
+            Pop 1
+          End
+          Push exn
+          Lookup
+          If
+            Pop 0
+          Else
+            Begin
+              Push 4
+              Push True
+              Push exn
+              Global
+              Pop 1
+            End
+          End
+          Push False
+          Push exn
+          Global
+          Pop 1
+          Try
+            Push 0
+            Push vx
+            Lookup
+            Div 2
+            Push True
+            Push exn
+            Global
+            Pop 1
+          End
+          Push exn
+          Lookup
+          If
+            Pop 0
+          Else
+            Begin
+              Push 5
+              Push True
+              Push exn
+              Global
+              Pop 1
+            End
+          End
+          Add 3
+          Push True
+          Push exn
+          Global
+          Pop 1
+        End
+        Push exn
+        Lookup
+        If
+          Pop 0
+        Else
+          Begin
+            Push 3
+            Push True
+            Push exn
+            Global
+            Pop 1
+          End
+        End
+        Push vx
+        Local
+        Pop 1
+        Push vx
+        Lookup
+        Trace 1
+        Push ()
+      End
+    End
+  End
+End
+----------------interp result----------------
+["10"]

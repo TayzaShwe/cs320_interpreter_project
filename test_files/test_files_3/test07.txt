@@ -1,0 +1,153 @@
+Begin
+  Push 2
+  Push vx
+  Local
+  Pop 1
+  Push vx
+  Lookup
+  Switch
+    Case 1
+      Begin
+        Begin
+          Fun vf vn
+            Push 0
+            Push vn
+            Lookup
+            Lte
+            If
+              Begin
+                Push 0
+              End
+            Else
+              Begin
+                Push 1
+                Push vn
+                Lookup
+                Sub 2
+                Push vf
+                Lookup
+                Call
+                Push vn
+                Lookup
+                Add 2
+              End
+            End
+          End
+          Push vf
+          Lookup
+          Push vf
+          Local
+          Pop 1
+          Begin
+            Push 10
+            Push vf
+            Lookup
+            Call
+            Push vy
+            Local
+            Pop 1
+            Push vy
+            Lookup
+            Trace 1
+            Push ()
+          End
+        End
+      End
+    Case 2
+      Begin
+        Begin
+          Fun vf vn
+            Push 0
+            Push vn
+            Lookup
+            Lte
+            If
+              Begin
+                Push 0
+              End
+            Else
+              Begin
+                Push 1
+                Push vn
+                Lookup
+                Sub 2
+                Push vf
+                Lookup
+                Call
+                Push vn
+                Lookup
+                Sub 2
+              End
+            End
+          End
+          Push vf
+          Lookup
+          Push vf
+          Local
+          Pop 1
+          Begin
+            Push 10
+            Push vf
+            Lookup
+            Call
+            Push vy
+            Local
+            Pop 1
+            Push vy
+            Lookup
+            Trace 1
+            Push ()
+          End
+        End
+      End
+    Case 3
+      Begin
+        Begin
+          Fun vf vn
+            Push 0
+            Push vn
+            Lookup
+            Lte
+            If
+              Begin
+                Push 1
+              End
+            Else
+              Begin
+                Push 1
+                Push vn
+                Lookup
+                Sub 2
+                Push vf
+                Lookup
+                Call
+                Push vn
+                Lookup
+                Mul 2
+              End
+            End
+          End
+          Push vf
+          Lookup
+          Push vf
+          Local
+          Pop 1
+          Begin
+            Push 10
+            Push vf
+            Lookup
+            Call
+            Push vy
+            Local
+            Pop 1
+            Push vy
+            Lookup
+            Trace 1
+            Push ()
+          End
+        End
+      End
+  End
+End
+----------------interp result----------------
+["5"]

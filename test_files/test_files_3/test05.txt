@@ -1,0 +1,46 @@
+Begin
+  Fun vsum vn
+    Push 0
+    Push vn
+    Lookup
+    Lte
+    If
+      Begin
+        Push 0
+      End
+    Else
+      Begin
+        Push 1
+        Push vn
+        Lookup
+        Sub 2
+        Push vsum
+        Lookup
+        Call
+        Push vn
+        Lookup
+        Add 2
+      End
+    End
+  End
+  Push vsum
+  Lookup
+  Push vsum
+  Local
+  Pop 1
+  Begin
+    Push 10
+    Push vsum
+    Lookup
+    Call
+    Push vx
+    Local
+    Pop 1
+    Push vx
+    Lookup
+    Trace 1
+    Push ()
+  End
+End
+----------------interp result----------------
+["55"]

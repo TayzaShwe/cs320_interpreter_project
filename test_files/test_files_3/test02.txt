@@ -1,0 +1,53 @@
+Begin
+  Begin
+    Push True
+    Push vx
+    Local
+    Pop 1
+    Begin
+      Push False
+      Push vy
+      Local
+      Pop 1
+      Begin
+        Push True
+        Push vz
+        Local
+        Pop 1
+        Push vx
+        Lookup
+        Push vy
+        Lookup
+        And
+        Push vz
+        Lookup
+        Or
+      End
+    End
+  End
+  Push vx
+  Local
+  Pop 1
+  Begin
+    Push vx
+    Lookup
+    If
+      Begin
+        Push 54
+      End
+    Else
+      Begin
+        Push 20
+      End
+    End
+    Push vx
+    Local
+    Pop 1
+    Push vx
+    Lookup
+    Trace 1
+    Push ()
+  End
+End
+----------------interp result----------------
+["54"]

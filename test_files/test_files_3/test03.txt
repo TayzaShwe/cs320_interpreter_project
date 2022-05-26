@@ -1,0 +1,65 @@
+Begin
+  Push 89
+  Push vx
+  Local
+  Pop 1
+  Begin
+    Push 13
+    Push vy
+    Local
+    Pop 1
+    Begin
+      Push vy
+      Lookup
+      Push vx
+      Lookup
+      Mul 2
+      Push vx
+      Local
+      Pop 1
+      Begin
+        Push vx
+        Lookup
+        Push vy
+        Lookup
+        Trace 2
+        Push ()
+        Push v_
+        Local
+        Pop 1
+        Begin
+          Push vy
+          Lookup
+          Push vx
+          Lookup
+          Div 2
+          Push vx
+          Local
+          Pop 1
+          Push 0
+          Push vx
+          Lookup
+          Lte
+          Not
+          If
+            Begin
+              Push vx
+              Lookup
+              Trace 1
+              Push ()
+            End
+          Else
+            Begin
+              Push vy
+              Lookup
+              Trace 1
+              Push ()
+            End
+          End
+        End
+      End
+    End
+  End
+End
+----------------interp result----------------
+["89"; "1157"; "13"]

@@ -1,0 +1,30 @@
+Begin
+  Push 1
+  Push vx
+  Local
+  Pop 1
+  Begin
+    Push 2
+    Push vy
+    Local
+    Pop 1
+    Begin
+      Push 5
+      Push vz
+      Local
+      Pop 1
+      Push vz
+      Lookup
+      Push vy
+      Lookup
+      Mul 2
+      Push vx
+      Lookup
+      Add 2
+      Trace 1
+      Push ()
+    End
+  End
+End
+----------------interp result----------------
+["11"]

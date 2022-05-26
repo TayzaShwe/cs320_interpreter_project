@@ -1,0 +1,58 @@
+Begin
+  Fun vloop vn
+    Begin
+      Push vn
+      Lookup
+      Push 39
+      Div 2
+      Trace 1
+      Push ()
+      Push v_
+      Local
+      Pop 1
+      Push 3
+      Push vn
+      Lookup
+      Div 2
+      Push vloop
+      Lookup
+      Call
+    End
+  End
+  Push vloop
+  Lookup
+  Push vloop
+  Local
+  Pop 1
+  Push False
+  Push exn
+  Global
+  Pop 1
+  Try
+    Push 39
+    Push vloop
+    Lookup
+    Call
+    Push True
+    Push exn
+    Global
+    Pop 1
+  End
+  Push exn
+  Lookup
+  If
+    Pop 0
+  Else
+    Begin
+      Push False
+      Trace 1
+      Push ()
+      Push True
+      Push exn
+      Global
+      Pop 1
+    End
+  End
+End
+----------------interp result----------------
+["False"; "39"; "9"; "3"; "1"]
