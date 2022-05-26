@@ -24,13 +24,16 @@ Ocaml used to be commonly used for parsers, compilers, and interpreters but now,
 
 The order in which the interpreter operates is as follows:
 1) Accepts a string of commands (eg. "Push 1 Push 2 Add 2")
-2) The string of commands is then broken up into an 
+2) The string of commands is then broken up into an array of commands. Each element of type command. 
+3) The array is passed into a evaluator function that performs the commands on a stack. 
+4) An array of results is returned from the evaluator function.
 
 [Demonstration video.](https://youtu.be/EiNxiaXhf8w)
 
 ## Commands ##
 
-The minimax algorithm is a recursive algorithm that simulates every possible move. The score that is returned when I win would be 1 and the score that is returned when my opponent wins is -1. The score is 0 when nobody has won yet and it is not a draw. We will refer to the number of moves as depth. The algorithm tries every available move at one depth and if it is my turn, picks the move with the highest score. The algorithm picks the lowest score for if it is my opponent's turn. The idea is that the algorithm picks the best move for me and the best move for the opponent since the lowest score is the best score for my opponent. It does this until all possible moves are calculated. If there are multiple highest scores, it arbitrarily picks a highest score. 
+Refer to [project_instructions](https://github.com/TayzaShwe/cs320_interpreter_project/blob/main/project_instructions.pdf).
+
 
 ## How the program was built ##
 
