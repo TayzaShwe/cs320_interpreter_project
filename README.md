@@ -1,7 +1,7 @@
 # CS320 INTERPRETER PROJECT #
 This is the official repository for my Interpreter project. 
 
-### Table of Contents ###
+## Table of Contents ##
 1) Introduction to Ocaml
 2) Brief description of program
 3) Commands
